@@ -108,8 +108,8 @@ analytics:
 author:
   name             : "t3hcr"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am me. You are you. We are we."
-  location         : "In the middle of nowhere and somewhere."
+  #bio              : ""
+  #location         : "Nowhere and somewhere"
   email            :
   links:
     - label: "Email"
