@@ -108,16 +108,19 @@ analytics:
 author:
   name             : "t3hcr"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  #bio              : ""
+  bio              : "Family man and fellow human trying to behave like Jesus would toward all ya'll. Technologist that makes the 0s and 1s flow for my employer."
   #location         : "Nowhere and somewhere"
   email            :
   links:
+    - label: "KeyBase"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://keybase.io/t3hcr"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://t3hcr.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/t3hcr"
