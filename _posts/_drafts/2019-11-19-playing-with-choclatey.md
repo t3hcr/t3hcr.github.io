@@ -1,6 +1,6 @@
 # Playing with Choclatey
 
-I started playing with [Choclatey] today. I'm planning to use it to install and update software used by myself and fellow administrators on various Windows servers.  The nice thing about it is there's no "click, click, next, finish" to it.  It's repeatable and reproducible and makes admin life easier. 
+I started playing with [Choclatey] today. I'm planning to use it to install and update software used by myself and fellow administrators on various Windows servers.  The nice thing about it is there's no "click, click, next, finish" to it.  It's repeatable and reproducible and makes admin life easier.
 
 To top it off, when used in combination with PowerShell you can remotely install software.  As an example: 
 
