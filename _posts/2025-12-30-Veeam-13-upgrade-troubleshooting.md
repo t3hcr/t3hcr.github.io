@@ -108,17 +108,18 @@ WHERE agent_version = '3.0.2.1170'
    OR agent_version ILIKE '3.0.2.%';
 ```
 
-Example Result
+Example Result: 
+
+```
 host_id	agent_version
 <EP_HOST_UUID>	3.0.2.1170
+```
 
 This confirms the installer is blocking on a legacy Agent 3.x record.
 
 ---
 
 ## Step 2 — Map the Agent Record to a Host
-
-Step 2 — Map the Agent Record to a Host
 
 The epagents table does not store hostnames directly.
 Host details are stored in:
@@ -145,13 +146,11 @@ FROM "backup.model.ephosts"
 WHERE id = '<EP_HOST_UUID>'::uuid;
 ```
 
-What You’ll See
+### What You’ll See
 
 If this is the ghost entry, fields like these will jump out immediately:
-
-connection_point: OLD-AGENT-HOST
-
-display_name: OLD-AGENT-HOST
+- connection_point: OLD-AGENT-HOST
+- display_name: OLD-AGENT-HOST
 
 At this point, you’ve proven exactly what’s blocking the upgrade.
 
@@ -168,14 +167,10 @@ backup.model.epagents.host_id
 ```
 
 Deleting the EP host automatically removes:
-
-the EP agent inventory record
-
-EP agent membership rows
-
-EP agent backup statistics
-
-related EP metadata
+- the EP agent inventory record
+- EP agent membership rows
+- EP agent backup statistics
+- related EP metadata
 
 This is the clean, supported way to resolve the condition.
 
@@ -211,12 +206,9 @@ Expected result:
 After database changes, don’t reuse an already-running installer window.
 
 On the Veeam server, restart the following services:
-
-Veeam Backup Service
-
-Veeam Installer Service
-
-Veeam Broker Service (if present)
+- Veeam Backup Service
+- Veeam Installer Service
+- Veeam Broker Service (if present)
 
 Then launch the v13 installer fresh.
 
