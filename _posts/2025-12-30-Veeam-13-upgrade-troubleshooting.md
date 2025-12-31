@@ -1,22 +1,4 @@
----
-layout: post
-title: "Fixing a Ghost Veeam Agent That Blocks a v13 Upgrade (PostgreSQL)"
-date: 2025-12-30 20:00:00 -0500
-categories:
-  - veeam
-  - backup
-  - postgresql
-  - upgrades
-tags:
-  - Veeam
-  - VBR
-  - v13
-  - PostgreSQL
-  - troubleshooting
-  - agents
----
-
-### Author's note: This post is being made to help others and is the result of my interactions with AI and should be considered as such. ALWAYS backup and test before implementing any fixes. If you're unsure or uncomfortable making changes (or fixing them) contact Veeam support!
+*Author's note: This post is being made to help others and is the result of my interactions with AI and should be considered as such. ALWAYS backup and test before implementing any fixes. If you're unsure or uncomfortable making changes (or fixing them) contact Veeam support!*
 
 ## Overview
 
