@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : t3hcr
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Chris Rivers"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Family man and fellow human trying to behave like Jesus would toward all ya'll. Technologist that makes the 0s and 1s flow for my employer."
+  bio              : "Two steps forward and one step back is still a step forward. A blog about technology, family, and life."
   #location         : "Nowhere and somewhere"
   email            :
   links:
