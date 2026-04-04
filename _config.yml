@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "t3hcr"
+title                    : "Forthstep"
 title_separator          : "-"
-name                     : "t3hcr"
-description              : "Stuff I want to share with you"
+name                     : "Chris Rivers"
+description              : "Two steps forward and one step back is still a step forward. A blog about technology, family, and life."
 url                      : "https://t3hcr.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : t3hcr/t3chr.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
