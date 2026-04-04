@@ -229,4 +229,3 @@ The v13 installer checks EP agent inventory, not just backup objects.
 - Trust what the installer tells you — it’s reading real data
 
 This is one of those cases where the UI shows nothing, PowerShell can’t help, and the database is the only place the truth lives.
-
