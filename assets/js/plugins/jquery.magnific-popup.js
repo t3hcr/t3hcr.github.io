@@ -89,7 +89,7 @@
     },
     _getCloseBtn = function(type) {
       if(type !== _currPopupType || !mfp.currTemplate.closeBtn) {
-        mfp.currTemplate.closeBtn = $( mfp.st.closeMarkup.replace('%title%', mfp.st.tClose ) );
+        mfp.currTemplate.closeBtn = $( $.parseHTML( mfp.st.closeMarkup.replace('%title%', mfp.st.tClose ) ) );
         _currPopupType = type;
       }
       return mfp.currTemplate.closeBtn;
@@ -353,7 +353,7 @@
       $('html').css(windowStyles);
 
       // add everything to DOM
-      mfp.bgOverlay.add(mfp.wrap).prependTo( mfp.st.prependTo || $(document.body) );
+      mfp.bgOverlay.add(mfp.wrap).prependTo( mfp.st.prependTo ? $(document).find(mfp.st.prependTo) : $(document.body) );
 
       // Save last focused element
       mfp._lastFocusedEl = document.activeElement;
@@ -506,7 +506,8 @@
         _mfpTrigger('FirstMarkupParse', markup);
 
         if(markup) {
-          mfp.currTemplate[type] = $(markup);
+          // markup is a trusted HTML template string provided by the plugin configuration
+          mfp.currTemplate[type] = $($.parseHTML(markup));
         } else {
           // if there is no markup found we just define that template is parsed
           mfp.currTemplate[type] = true;
